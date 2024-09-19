@@ -1,0 +1,847 @@
+/* Reset and base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #f0f0f0;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.logo {
+    max-width: 50px;  
+}
+
+.logo img {
+    max-width: 50px; /* Adjust the value as needed */
+}
+
+#logo {
+    max-width: 50px;  
+}
+
+#logo img {
+    max-width: 50px; /* Adjust the value as needed */
+}
+
+/* Main content styles */
+/*Viewport width is a unit that represents a percentage of the viewport's width. 
+Using vw for padding makes it responsive to the width of the viewport.*/
+main {
+    padding: 2vw 7vw;    
+    flex-grow: 1; 
+}
+
+/* Footer styles */
+footer {
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #f8f8f8;
+}
+
+.hero h1 {
+    color: #333;
+}
+
+.hero p {
+    color: #555;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero a:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+.empty {
+    background-color: transparent;
+    padding: 1vw;
+}
+
+/* How it Works section styles */
+.how-it-works {
+    padding: 20px 40px;
+    background-color: #f8f8f8;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    color: #e44d26;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.step {
+    flex-basis: calc(33.33% - 20px);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.step p {
+    margin: 0;
+}
+
+.step a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.step a:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+/* Chefs section styles */
+.chefs h2 {
+    margin-bottom: 25px;
+    color: #e44d26;
+    text-align: center;    
+}
+
+.chef-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.chef-profile img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.chef-profile h3 {
+    color: #e44d26;
+}
+
+
+/* Social Media section styles */
+.social-media {
+    padding: 40px 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Become a Chef Section */
+.become-a-chef {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.become-a-chef h2 {
+    color: #e44d26;
+}
+
+.become-a-chef p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.become-a-chef .chef-info img {
+    width: 70%;   
+}
+
+.chef-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.chef-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.chef-info a:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+.chef-image {
+    flex-basis: 40%;
+    margin-right: 20px;
+}
+
+.chef-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.chef-details {
+    flex-basis: 60%;
+    text-align: left;
+}
+
+.chef-details h3 {
+    color: #e44d26;
+}
+
+.chef-details p {
+    color: #555;
+}
+
+/* Form container for the login/register activity */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+
+.container .content{
+    text-align: center;
+}
+
+.container .content h3{
+    font-size: 30px;
+    color:#333;
+}
+
+.container .content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-container{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+
+.form-container form{
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: rgb(254, 221, 209);
+    text-align: center;
+    width: 500px;
+}
+
+.form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+}
+
+.form-container form input,
+.form-container form select {
+    width: 75%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0px;
+    background: #eee;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    appearance: none; 
+}
+
+.form-container form .form-btn{
+    background: #e44d26;
+    color:white;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+.form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:#333;
+}
+
+.form-container form p a{
+    color:orangered;
+}
+
+.form-container form .error-msg{
+    margin: 0px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 2px;
+    font-size: 20px;
+    padding:5px;
+}
+/* Search page */
+.search h2, .view-profile h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color:orangered;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.search h3{
+    color:orangered;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search #andmore{
+    margin-bottom: 15px;
+    color: black;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.search-users-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-user {
+    width: calc(33.33% - 10px); 
+    padding-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+    background-color: #f8d0c5;
+    padding-left: 1.5%;
+    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.search-user img{
+    width: 150px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-user p{
+    padding: .3px;
+}
+
+.search-user a{
+    text-decoration: none;
+    background: #e44d26;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px; 
+}
+
+.search-user a:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+/* Clearfix to handle the floating elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Display on profile chef page */
+.view-profile{
+    align-items: center;
+    justify-content: center;
+    padding:5px 60px;
+    padding-bottom: 60px;
+}
+
+#description{
+    font-size: 20px;
+    color:#333;
+    text-align: center;
+    font-style: italic;
+}
+
+.view-profile .text-view-profile h1{
+    font-size: 30px;
+    color:orangered;
+    text-align: center;
+}
+
+.view-profile .text-view-profile p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+caption h2{
+    font-size: 25px;
+    color:orangered;
+}
+
+#review-title{
+    font-size: 25px;
+    color:orangered;
+    text-align: center;
+}
+/* Optional: Style for the table cells */
+.table td, .table th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+.review-user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center; /* Center the columns vertically */
+    gap: 20px; /* Adjust the gap between columns as needed */
+}
+
+.review-user {
+    width: calc(25% - 10px);
+    align-self: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+    background-color: #fbf1ee;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center;
+    text-align: center; /* Center-align text content */
+}
+
+.review-user img {
+    width: 90px; 
+    height: auto;
+    margin-bottom: 10px; /* Add margin at the bottom to separate image and text */
+}
+
+/* Clearfix to handle the floating elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Stars rating */
+.star-rating {
+    display: inline-block;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #ffd700; /* Set the color of the stars */
+
+    /* Generate stars using Unicode character '\2605' (black star) */
+    content: "\2605\2605\2605\2605\2605";
+}
+
+.star-rating[data-rating="1"]::before {
+    content: "\2605\2606\2606\2606\2606"; /* Display one filled star */
+}
+
+.star-rating[data-rating="2"]::before {
+    content: "\2605\2605\2606\2606\2606"; /* Display two filled stars */
+}
+
+.star-rating[data-rating="3"]::before {
+    content: "\2605\2605\2605\2606\2606"; /* Display three filled stars */
+}
+
+.star-rating[data-rating="4"]::before {
+    content: "\2605\2605\2605\2605\2606"; /* Display four filled stars */
+}
+
+.star-rating[data-rating="5"]::before {
+    content: "\2605\2605\2605\2605\2605"; /* Display five filled stars */
+}
+
+/* Order page */
+.order-review h1{
+    color: #e44d26;
+    font-size: 25px;
+}
+
+.order-review h2{
+    color: orangered;
+    font-size: 20px;
+}
+
+/* Form payment */
+.form-payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.form-payment form select{
+    width: 95%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0px;
+    background: #eee;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    appearance: none; 
+}
+
+.form{
+    background-color: #ffeae5;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px; 
+    width: 500px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number],  input[type=textarea]{
+    width: 90%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn {
+    background-color: #e44d26;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 95%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    align-self: center;
+}
+  
+.btn:hover ,.btn-profile:hover {
+    background: rgb(143, 43, 6);
+    color:#fff;
+}
+
+.btn-profile{
+    background-color: #e44d26;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    align-self: center;
+}
+
+/* Customer */
+.options-bar {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f8cdc2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #ccc; 
+    border-bottom: none;  
+}
+
+.options-bar ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}  
+  
+.options-bar a {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    color:#e44d26;
+}
+  
+/* Change background color of buttons on hover */
+.options-bar a:hover {
+    background-color: rgb(143, 43, 6);
+    color: white
+}
+  
+/* Style the tab content */
+.account-info {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.account-info h2{
+    color:#e44d26;
+}
+
+.table-order {
+    text-align: justify;
+    margin: 0 auto; /* Set left and right margins to auto */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.table-order td, .table-order th {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+}
+
+.table-order h2{
+    text-align: center;
+}
+
+.form-review{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+
+/* ================================== */
+.container-settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+}
+ 
+.container-settings .content-settings{
+    text-align: center;
+}
+
+.container-settings .content-settings h3{
+    font-size: 30px;
+    color:#333;
+}
+ 
+.container-settings .content-settings h3 span{
+    background: orangered;
+    color:#fff;
+    border-radius: 5px;
+    padding:0 15px;
+}
+ 
+.container-settings .content-settings h1{
+    font-size: 50px;
+    color:#333;
+}
+ 
+.container-settings .content-settings h1 span{
+    color:orangered;
+}
+ 
+.container-settings .content-settings p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+ 
+.container-settings .content-settings .btn{
+    padding:10px 30px;
+    font-size: 20px;
+    background: #333;
+    color:#fff;
+    margin:0 5px;
+    text-transform: capitalize;
+}
+
+.container-settings .content-settings a{
+    text-decoration: none;
+}
+ 
+.container-settings .content-settings .btn:hover{
+    background: orangered;
+}
+/* ================================== */
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically; use 'row' for horizontal */
+    gap: 10px; /* Adjust the gap between buttons */
+}
+
+
+.radio-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.radio-item input {
+    margin-right: 5px; 
+}
+
+.chef-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.btn-chef {
+    background-color: #e44d26;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    margin-right: 10px;
+    border: none;
+    width: 95%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    align-self: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .chefs,
+    .chef-steps li {
+        flex-basis: 100%;
+    }
+
+    .search-users-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-user {
+        width: calc(50% - 10px);
+    }
+}
